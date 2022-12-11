@@ -19,6 +19,10 @@
     
   </header>
 
+  <div id="loader" class="loader">
+    <div class="custom-loader"></div>
+  </div>
+
   <!--COMEÇO HOME-->
   <div id="home" class="container animation_scale" style="padding-left: unset;">
     <div class="row">
@@ -27,91 +31,68 @@
       </div>
     </div>
     <div class="row">
+      <div class="col-4-md card-event-text-secondary" style="width: auto; margin: 15px; margin-bottom: 2px !important;">
+        Selecione a região para listar os bares
+      </div>
+    </div>
+    <div class="row" style="margin-bottom: 10px;">
       <div class="col-4-md card-event-text-secondary" style="width: 96vw; margin: 15px">
-        <select class="form-select">
-          <option selected>Selecione sua região</option>
+        <select id="sel_regiao" class="form-select">
+          <option selected>Selecione</option>
           <option value="1">Guaíba</option>
           <option value="2">Porto Alegre</option>
           <option value="3">São Leopoldo</option>
         </select>
       </div>
     </div>
-    <div class="row">
-      <div class="col-4-md card-event-text-secondary" style="width: auto; margin: 15px">
-        
+    
+    <div class="container">
+      <div class="row" style="margin-bottom: 10px;">
+        <div class="col">
+          <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
+            <img class="card-img-top card-img-event" src="dirty.png" alt="Card image cap">
+            <div class="card-body">
+                    <p class="card-text card-event-text-primary-bar">Dirty Old Man</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
+            <img class="card-img-top card-img-event" src="capone.png" alt="Card image cap">
+            <div class="card-body">
+                    <p class="card-text card-event-text-primary-bar">Capone Drinkeria</p>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <div class="row" style="margin-bottom: 10px;">
+        <div class="col">
+          <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
+            <img class="card-img-top card-img-event" src="lagom.png" alt="Card image cap">
+            <div class="card-body">
+                    <p class="card-text card-event-text-primary-bar">Lagom Brewery & Pub</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
+            <img class="card-img-top card-img-event" src="spoiler.png" alt="Card image cap">
+            <div class="card-body">
+                    <p class="card-text card-event-text-primary-bar">Spoiler - Porto Alegre</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>
+
+    
   </div>
   <!--FINAL HOME-->
 
-  <!--COMEÇO PUBS-->
-  <div id="pubs" class="container animation_scale" style="padding: unset; display: none;">
-    <div class="row">
-      <div class="col-4-md text-event-primary" style="width: auto; margin: 15px">
-          <h3><strong>PUBS</strong></h3>
-      </div>
-    </div>
-      <div class="container" style="padding-left: unset;">
-        <div class="row" style="margin-bottom: 10px;">
-          <div class="col">
-            <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
-              <img class="card-img-top card-img-event" src="event.jpg" alt="Card image cap">
-              <div class="card-body">
-                      <p class="card-text card-event-text-primary">Valhalla</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
-              <img class="card-img-top card-img-event" src="event.jpg" alt="Card image cap">
-              <div class="card-body">
-                      <p class="card-text card-event-text-primary">Sisters</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" style="margin-bottom: 10px;">
-          <div class="col">
-            <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
-              <img class="card-img-top card-img-event" src="event.jpg" alt="Card image cap">
-              <div class="card-body">
-                      <p class="card-text card-event-text-primary">Valhalla</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
-              <img class="card-img-top card-img-event" src="event.jpg" alt="Card image cap">
-              <div class="card-body">
-                      <p class="card-text card-event-text-primary">Sisters</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row" style="margin-bottom: 10px;">
-          <div class="col">
-            <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
-              <img class="card-img-top card-img-event" src="event.jpg" alt="Card image cap">
-              <div class="card-body">
-                      <p class="card-text card-event-text-primary">Valhalla</p>
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card card-event" style="width: auto; margin-left: 10px;margin-right: 10px" data-bs-toggle="modal" data-bs-target="#modal-id-1">
-              <img class="card-img-top card-img-event" src="event.jpg" alt="Card image cap">
-              <div class="card-body">
-                      <p class="card-text card-event-text-primary">Sisters</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-  </div>
-  <!--FINAL PUBS-->
+ 
 
   <!--COMEÇO EVENTO-->
   <div id="event" class="container animation_scale" style="padding-left: unset; display: none;">
@@ -189,12 +170,61 @@
   </div>
 
 
-  <div id="patro" class="container animation_scale" style="padding-left: unset; display: none;">
+  <div id="patro" class="container animation_scale" style="padding-left: unset; padding-right: unset; display: none;">
     <div class="row">
       <div class="col-4-md text-event-primary" style="width: auto; margin: 15px">
           <h3><strong>Patrocinadores</strong></h3>
       </div>
-  </div>
+    </div>
+      <div class="col">
+        <div class="row">
+          <div class="card card-event" style="max-width: 97vw;border-radius: 5px;padding: unset;margin: 18px; margin-bottom: 5px;">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="spoiler_logo.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body" style="padding-left: 0px;">
+                  <h5 class="card-title">Capone bar</h5>
+                  <p class="card-text" style="font-size: 10px;">O capone é um dos melhores bares de Porto Alegre para quem procura uma temática diferente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card card-event" style="max-width: 97vw;border-radius: 5px;padding: unset;margin: 18px; margin-bottom: 5px;margin-top: 5px;">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="spoiler_logo.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body" style="padding-left: 0px;">
+                  <h5 class="card-title">Capone bar</h5>
+                  <p class="card-text" style="font-size: 10px;">O capone é um dos melhores bares de Porto Alegre para quem procura uma temática diferente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card card-event" style="max-width: 97vw;border-radius: 5px;padding: unset;margin: 18px; margin-bottom: 5px;margin-top: 5px;">
+            <div class="row g-0">
+              <div class="col-4">
+                <img src="spoiler_logo.png" class="img-fluid rounded-start" alt="...">
+              </div>
+              <div class="col-8">
+                <div class="card-body" style="padding-left: 0px;">
+                  <h5 class="card-title">Capone bar</h5>
+                  <p class="card-text" style="font-size: 10px;">O capone é um dos melhores bares de Porto Alegre para quem procura uma temática diferente.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
   </div>
 
     <!-- MODAL PRIMEIRO CARD -->
@@ -234,10 +264,10 @@
       <span class="icon-menu-size icon-home"></span>
       <!--<span class="nav_text">Dashboard</span>-->
     </a>
-    <a onclick="menu('pubs')" href="#" class="nav_link">
+    <!--<a onclick="menu('pubs')" href="#" class="nav_link">
       <span class="icon-menu-size icon-directions"></span>
-      <!--<span class="nav_text">PUBS</span>-->
-    </a>
+      <span class="nav_text">PUBS</span>
+    </a>-->
     <a onclick="menu('event')"  href="#" class="nav_link">
       <span class="icon-menu-size icon-event"></span>
       <!--<span class="nav_text">Eventos</span>-->
